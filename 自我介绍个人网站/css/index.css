@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     width: 1440px;
+
 }
 
 header{
@@ -29,7 +30,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    position: relative;
+    position: relative; /*相对定位*/
     vertical-align: bottom;
     
 }
@@ -45,46 +46,49 @@ nav ul li a {
     margin: 0 60px;
 }
 
+
 #container {
-    height: 1000px;
+    height: 800px;
     background-image:url(../images/backgroud.jpg);
-    padding-top: 60px;
-    padding-left: 160px;
-
+    padding-bottom: 200px;
 }
 
-#container div.inner #content_1 {
-    width: 350px;
-    height: 900px;
-    padding-top: 20px;
-    background-color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    float: left; /*浮动定位*/
-    border-top: 4px solid #85754d;
+form textarea {
+	width: 500px;
+	height: 400px;
+    padding: 10px;
 }
 
-
-
-#container div.inner #content_2 {
-    width: 350px;
-    height: 900px;
-    padding-top: 20px;
-    background-color: #e8e0cd;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 40px;
-    border-top: 4px solid #b89a53;
-    float: left;/*浮动定位*/
+#container div.inner #sheet {
+    width: 700px;
+    height: 800px;
+    background-image: url(../images/container-background.jpg);
+    position: absolute; /*绝对定位*/
+    left: 370px;
+    right: 370px;
+    top: 284px;
+    display: table;
+    border: thin dotted #7e7e7e;
+    
 }
 
-#container div.inner #content_3 {
-    width: 350px;
-    height: 900px;
-    padding-top: 20px;
-    background-color: #ebae1f;
-    margin-left: 40px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-top: 4px solid #b89a53;
-    float: left;/*浮动定位*/
+div.tableRow {
+	display: table-row;
+}
+
+div.tableRow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 5px;
+    color: white;
+    font-weight:bolder;
+    font-family:sans-serif;
+}
+div.tableRow p:first-child {
+	text-align: right;
+}
+p.heading {
+	font-weight: bold;
 }
 
 #footer{
